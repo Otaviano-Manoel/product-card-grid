@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--cream);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    background-color: var(--white);
+    border-radius: 10px;
+}
+
+.container .product img {
+    width: 100%;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.container .info {
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+    padding: 30px;
+}
+
+.container .info .category {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-family: var(--mantserrat);
+    font-weight: 500;
+    letter-spacing: 3px;
+    color: var(--grayish-blue);
+}
+
+.container .info .name {
+    font-size: 3.2rem;
+    font-family: var(--fraunces);
+}
+
+.container .info .description {
+    font-size: 1.4rem;
+    font-family: var(--mantserrat);
+    font-weight: 500;
+    color: var(--grayish-blue);
+}
+
+.container .info .price {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.container .info .price .current {
+    font-size: 3rem;
+    font-family: var(--fraunces);
+    color: var(--darkcyan);
+}
+
+.container .info .price .old {
+    padding-top: 10px;
+    font-size: 1.4rem;
+    font-family: var(--fraunces);
+    color: var(--grayish-blue);
+    text-decoration: line-through;
+}
+
+.container .info .add-cart{
+    background-color: var(--darkcyan);
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: var(--mantserrat);
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: var(--white);
+
+    cursor: pointer;
+}
+
+.container .info .icon-cart{
+    margin-right: 10px;
+}
+
+.container .info .add-cart:hover{
+    background-color: var(--darkblue);
+}
