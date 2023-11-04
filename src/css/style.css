@@ -8,6 +8,7 @@ html {
 body {
     background-color: var(--cream);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -93,4 +94,15 @@ body {
 
 .container .info .add-cart:hover{
     background-color: var(--darkblue);
+}
+
+.attribution{
+    margin-top: 25px;
+    bottom: 15px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+}
+.attribution span{
+    margin-right: 15px;
 }
